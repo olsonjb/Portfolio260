@@ -1,0 +1,74 @@
+* {
+    /*Best practice reset https://www.internetingishard.com/html-and-css/css-box-model/ */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171717;
+    color: white;
+}
+
+div {
+    background-color: #363638;
+    border-radius: 0.5em;
+    padding: 1.5em;
+    margin: 1.2em 4em;
+}
+
+.spacer {
+    background-color: #171717;
+    margin: 0;
+    padding: 1px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #363638;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    border-radius: .5em;
+    text-align: center;
+    /* Safari */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navlist li {
+    display: inline-block;
+}
+
+.navlist li a {
+    border-radius: .2em;
+    color: white;
+    display: block;
+    padding: 14px 3.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navlist li a:hover {
+    background-color: #3a3a6a;
+}
+
+.title-box {
+    text-align: center;
+}

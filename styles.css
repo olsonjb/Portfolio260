@@ -14,7 +14,7 @@ div {
     background-color: #363638;
     border-radius: 0.5em;
     padding: 1.5em;
-    margin: 1.2em 4em;
+    margin: 1.2em 1.2em;
 }
 
 .spacer {
@@ -32,13 +32,13 @@ h6 {
     font-family: "Helvetica", "Arial", sans-serif;
 }
 
-.navbar {
-    padding: 0;
-}
-
 .navlist {
     list-style-type: none;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: .1em 1.2em;
     padding: 0;
     overflow: hidden;
     background-color: #363638;
@@ -46,20 +46,19 @@ h6 {
     font-weight: bold;
     border-radius: .5em;
     text-align: center;
-    /* Safari */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
 }
 
 .navlist li {
-    display: inline-block;
+    display: flex;
+    flex: 1;
 }
 
 .navlist li a {
     border-radius: .2em;
     color: white;
-    display: block;
+    display: flex;
+    justify-content: center;
+    flex: 1;
     padding: 14px 3.5em;
     text-align: center;
     text-decoration: none;
@@ -71,4 +70,22 @@ h6 {
 
 .title-box {
     text-align: center;
+}
+
+@media only screen and (min-width: 601px) {
+    div {
+        margin: 1.2em 4em;
+    }
+
+    .navlist {
+        margin: .1em 4em;
+        flex-direction: row;
+    }
+    
+    .sticky {
+        /* Safari */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
 }
